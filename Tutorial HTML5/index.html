@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <!--Estilo CSS-->
+    <style> 
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Etiqueta "table" table-->
+    <table style="width: 500px;">
+        <thead> <!--Etiqueta "thead" para agrupar cabeceras-->
+            <tr> <!--Etiqueta "tr" table row-->
+                <th>Precio</th> <!--Etiqueta "th" que es la cabecera-->
+                <th>Producto</th> 
+            </tr>
+        </thead> 
+        <tbody> <!--Etiqueta "tbody" que sirve para indicar el cuerpo de la tabla-->
+            <tr>
+                <td>Hola mundo</td> <!--Elementos estándares de una celda en la tabla-->
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Hola mundo x2</td> <!--Elementos estándares de una celda en la tabla-->
+                <td>999.99$</td>
+            </tr>
+            <tr>
+                <td>Hola mundo x1000000</td> <!--Elementos estándares de una celda en la tabla-->
+                <td>0.99$</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Etiqueta "tfoot" para indicar el pie de la tabla-->
+            <td></td>      
+            <td>Total: 1.01</td>          
+        </tfoot>
+    </table>
+    
+    <!--Etiqueta "ul" lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--Etiqueta "ol" lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li> <!--"value" nos sirve para añadirle un valor a un elemento-->
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+        <li> <!--Lista anidada-->
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    
+     <!--Etiqueta "form" para crear formularios y obtener información-->
+     <form action="/formulario" method="POST"> <!--"action" es en donde colocamos la ruta y method es el tipo de método para obtener o enviar la información-->
+        <label for="nombre">Nombre:</label> <!--Etiqueta label-->
+        <input value="Fernando" type="text" name="nombre" id="nombre" placeholder="Fernando"> <!--Etiqueta "input" que permite recibir un dato tipo "text"-->
+        <br>
+        <label for="apellido">Apellido:</label> <!--Etiqueta label-->
+        <input value="Martinez" type="text" name="apellido" id="apellido" placeholder="Martinez">
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <!--Etiqueta "textarea" utilizada para ingresar comentarios-->
+        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese comentario">Valor por defecto</textarea>
+        <br>
+        <!-- <input type="submit"> Etiqueta "input" que permite enviar un dato "submit"-->
+        <button type="button">Tipo boton</button> <!--Etiqueta "button"-->
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+    <h1>Mi primer Heading</h1> <!--Heading test (Título)-->
+    <h2>Mi segundo Heading</h2> <!--Heading test1 (Título más pequeño)-->
+    <h3>Mi tercer Heading</h3> <!-- ... -->
+    <h4>Mi cuarto Heading</h4>
+    <h5>Mi quinto Heading</h5>
+    <h6>Mi chanchito feliz!</h6>
+
+    <p>Chanchito feliz esta muy feliz</p> <!--Etiqueta de párrafo-->
+    <p>Chanchito triste esta muy triste</p>
+
+    <hr> <!--Etiqueta de separación de texto-->
+    <h2>Chanchito Felipe</h2>
+
+    <p> <!--Etiqueta span-->
+        Este texto es <span style="color:blue">mucho mas largo</span> 
+        y es para mostrar <br> <br> <!--Etiqueta de salto de linea br-->
+        la etiqueda de span!
+    </p>
+
+    <!--Este es un comentario!-->
+
+    <!--Etiqueta de hipervinculo "a"-->
+    <a target="_blank" href="https://www.google.com.gt">Ir a Google</a> <!--Etiqueta target abre un hipervinculo en una pestaña distinta-->
+
+    <!--Etiqueta de imagen "img", ruta "src" y widht y height para tamaño-->
+    <br>
+    <img src="img/imgtest.png" alt="" width="400" height="425"/>
+</body>
+</html>
