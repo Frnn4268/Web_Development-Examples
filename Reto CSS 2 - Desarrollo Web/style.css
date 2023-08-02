@@ -16,12 +16,22 @@ body {
     border-radius: 0px 25px 25px 0px;
 }
 
-.main {
-    grid-area: main;
-    background-color: white;
-    display: grid;
-    color: black;
-    padding: 5px;
+.left-row {
+    grid-area: left-row;
+    text-align: left;
+    margin: 20px;
+}
+
+.center-row {
+    grid-area: center-row;
+    text-align: left;
+    margin: 20px;
+}
+
+.right-row {
+    grid-area: right-row;
+    text-align: left;
+    margin: 20px;
 }
 
 .footer {
@@ -29,24 +39,6 @@ body {
     background-color: #F2F3F4;
     text-align: center;
     border-radius: 25px;
-}
-
-.first-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 50px;
-    margin: 25px 100px 25px 100px;
-    cursor: pointer;
-    background-color: #F8F9F9 ;
-}
-
-.second-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 50px;
-    margin: 25px 100px 25px 100px;
-    cursor: pointer;
-    background-color: #F8F9F9 ;
 }
 
 img {
@@ -61,7 +53,7 @@ img {
     height: 150px;
     border-radius: 20px;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 50%;
 }
 
 .logo-footer {
@@ -73,12 +65,20 @@ img {
     cursor: pointer;
 }
 
+.product {
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 20px;
+}
+
 .container {
     display: grid;
     grid-template-areas:
-    'header header header header header header-right'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
+    'header header header-right'
+    'left-row center-row right-row'
+    'footer footer footer'
+    ;
 }
 
 @media screen and (max-width: 600px) {
@@ -87,7 +87,9 @@ img {
         grid-template-areas:
         'header'
         'header-right'
-        'main'
+        'left-row'
+        'center-row'
+        'right-row'
         'footer';
     }
 }
