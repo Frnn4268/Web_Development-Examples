@@ -1,0 +1,140 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    display: grid;
+    color: black;
+    padding: 5px;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin: 25px 100px 25px 100px;
+    cursor: pointer;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin: 25px 100px 25px 100px;
+    cursor: pointer;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin: 25px 100px 25px 100px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: left;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+p {
+    margin-left: 25px;
+}
+
+.top {
+    grid-area: top;
+    background-color: white;
+    color: black;
+}
+
+.top-right {
+    grid-area: top-right;
+    text-align: right;
+}
+
+.buttons {
+    padding: 5px;
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.top-center {
+    grid-area: top-center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    padding: 5px;
+}
+
+.div-center {
+    margin: 5px;
+    padding: 5px;
+    background-color: #E6E6E6;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div-all {
+    margin: 5px;
+    padding: 5px;
+    background-color: blacK;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    margin-left: 500px;
+    width: 50%;
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid;
+}
+
+.search {
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'top top top top top top-right'
+    'top-center top-center top-center top-center top-center top-center'
+    'main main main main main main';
+}
+
+@media screen and (max-width: 100%){
+    .container {
+        display: grid;
+        grid-template-areas:
+        'top'
+        'top-right'
+        'top-center'
+        'main'
+        ;
+    }
+}
