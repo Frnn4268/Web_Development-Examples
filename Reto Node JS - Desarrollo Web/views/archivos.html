@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos Subidos</title>
+</head>
+<body>
+    <h1>Archivos Subidos</h1>
+    <ul>
+        <% for (const contacto of contactos) { %>
+            <li>
+                <strong>Nombre:</strong> <%= contacto.nombre %><br>
+                <strong>Email:</strong> <%= contacto.email %><br>
+                <strong>Archivo DPI:</strong> <a href="/uploads/<%= contacto.archivoDPI %>"><%= contacto.archivoDPI %></a>
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>
